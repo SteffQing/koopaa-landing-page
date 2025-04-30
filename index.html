@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KooPaa - Save Smart with Your Circle, On-Chain</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="nav_header">
+      <div class="logo">
+        <img alt="KOOPAA logo image" src="./assets/koopaa_logo.png" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="btn-primary" style="width: max-content">Join Waitlist</button>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu Toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Save Smart with<br />Your Circle.<br />Together, On-Chain.</h2>
+        <p>
+          KooPaa turns your trusted savings circle into a transparent, automated system — powered by Solana and USDC.
+        </p>
+
+        <div class="email-form">
+          <input type="email" placeholder="Enter your email" />
+          <button class="btn-primary">Join Waitlist</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img alt="koopaa phone mockup" src="./assets/phone_mockup.png" class="phone-mockup" />
+        <button class="btn-primary">Save Smart,</button>
+        <button class="btn-primary">Save together,</button>
+        <button class="btn-primary">Save on-chain,</button>
+      </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="how-it-works">
+      <div class="content-header">
+        <h2 class="title">How it works</h2>
+        <p class="subtitle">From setup to payout — saving together has never been this simple.</p>
+      </div>
+      <!-- <div class="steps-container">
+        <div class="step">
+          <div class="step-number">01</div>
+          <div class="step-circle">
+            <div class="icon icon-group"></div>
+            <h3>Create or Join a Circle</h3>
+            <p>
+              Start a new savings group or join one with friends. Set the rules — number of members, contribution
+              amount, payout order, and frequency.
+            </p>
+          </div>
+        </div>
+
+        <div class="step center-step">
+          <div class="step-number">02</div>
+          <div class="step-circle">
+            <div class="icon icon-usdc"></div>
+            <h3>Contribute in USDC</h3>
+            <p>
+              Each member contributes their agreed amount in USDC to the group smart contract on every cycle (weekly,
+              bi-weekly, or monthly).
+            </p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">03</div>
+          <div class="step-circle">
+            <div class="icon icon-payout"></div>
+            <h3>Automated Payouts</h3>
+            <p>
+              At each payout round, the smart contract automatically sends the pooled funds to the scheduled member. No
+              delays. No bias.
+            </p>
+          </div>
+        </div>
+
+        <div class="step center-step">
+          <div class="step-number">04</div>
+          <div class="step-circle">
+            <div class="icon icon-track"></div>
+            <h3>Track & Earn</h3>
+            <p>
+              Use your dashboard to monitor group progress, payment history, and next payout. Optional: Let idle funds
+              earn yield in trusted DeFi pools.
+            </p>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <div class="content-header">
+        <h2 class="title">Frequently Asked Questions</h2>
+        <p class="subtitle">
+          Still you have any questions? Contact our Team via <a href="mailto:koopa@gmail.com">koopa@gmail.com</a>
+        </p>
+      </div>
+      <div class="accordion">
+        <!-- FAQ Item 1 -->
+        <div class="accordion-item">
+          <input type="checkbox" id="faq-1" class="accordion-toggle" checked />
+          <label for="faq-1" class="accordion-header">
+            <div class="number">01</div>
+            <div class="question">What is KooPaa?</div>
+            <div class="toggle-icon">
+              <span class="plus">+</span>
+              <span class="minus">×</span>
+            </div>
+          </label>
+          <div class="accordion-content">
+            <p>
+              Firstly choose which component you need to copy by using our super fast search page, then copy the
+              respective screen size you need by clicking on the copy button. Now you have the Figma Component in your
+              clipboard you can paste ("cmd + v" or "ctrl + v") it anywhere in your design files.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="accordion-item">
+          <input type="checkbox" id="faq-2" class="accordion-toggle" />
+          <label for="faq-2" class="accordion-header">
+            <div class="number">02</div>
+            <div class="question">How do I create or join a savings group?</div>
+            <div class="toggle-icon">
+              <span class="plus">+</span>
+              <span class="minus">×</span>
+            </div>
+          </label>
+          <div class="accordion-content">
+            <p>
+              To create a new savings group, navigate to the "Groups" section in the app and tap "Create New Group."
+              Follow the prompts to set up your group parameters including contribution amount, frequency, and member
+              limits. To join an existing group, you'll need an invitation link or code from the group admin. Enter this
+              in the "Join Group" section of the app.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="accordion-item">
+          <input type="checkbox" id="faq-3" class="accordion-toggle" />
+          <label for="faq-3" class="accordion-header">
+            <div class="number">03</div>
+            <div class="question">Is my money safe on KooPaa?</div>
+            <div class="toggle-icon">
+              <span class="plus">+</span>
+              <span class="minus">×</span>
+            </div>
+          </label>
+          <div class="accordion-content">
+            <p>
+              Yes, your funds on KooPaa are secured through blockchain technology. All transactions are recorded on the
+              Solana blockchain, making them transparent and immutable. We use USDC, a regulated stablecoin backed 1:1
+              by US dollars. Our smart contracts are audited by leading security firms, and we implement
+              industry-standard security practices to protect your assets.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="accordion-item">
+          <input type="checkbox" id="faq-4" class="accordion-toggle" />
+          <label for="faq-4" class="accordion-header">
+            <div class="number">04</div>
+            <div class="question">What happens if someone misses their payment?</div>
+            <div class="toggle-icon">
+              <span class="plus">+</span>
+              <span class="minus">×</span>
+            </div>
+          </label>
+          <div class="accordion-content">
+            <p>
+              If a group member misses a payment, the system automatically sends reminders to that member. Group admins
+              are also notified. After a grace period (customizable by the group), late fees may apply based on the
+              group's rules. For persistent non-payment, the group can vote to remove the member, with their previous
+              contributions handled according to the group's predetermined rules.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-logo">
+        <img alt="KOOPAA logo image" src="./assets/koopaa_logo_white.png" />
+      </div>
+      <div class="footer-tagline">
+        <h3>Saving Smart. Together. On-Chain.</h3>
+        <p>Secure, transparent group savings powered by Solana and USDC.</p>
+      </div>
+      <div class="social-icons">
+        <a href="#" class="social-icon">
+          <img src="./assets/socials/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="#" class="social-icon">
+          <img src="./assets/socials/instagram.svg" alt="instagram" />
+        </a>
+        <a href="#" class="social-icon">
+          <img src="./assets/socials/x.svg" alt="X" />
+        </a>
+        <a href="#" class="social-icon">
+          <img src="./assets/socials/youtube.svg" alt="youtube" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

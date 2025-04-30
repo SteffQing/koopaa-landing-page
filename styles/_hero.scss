@@ -1,0 +1,81 @@
+.hero {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  width: 80%;
+  flex: 1;
+  @media (min-width: $tablet) {
+    padding-left: calc((100vw - min(86.66vw, 1122px)) / 2);
+    text-align: left;
+    align-items: flex-start;
+    padding-bottom: 30px;
+  }
+  h2 {
+    font-size: clamp(24px, 5vw, 48px);
+    line-height: 134%;
+    letter-spacing: -0.04em;
+    color: $primary-text;
+    font-weight: 700;
+  }
+  p {
+    font-size: clamp(12px, 2.5vw, 18px);
+    font-weight: 400;
+    color: $secondary-text;
+  }
+}
+
+.hero-image {
+  position: relative;
+  flex: 1;
+  img {
+    width: 50%;
+    margin-inline: auto;
+  }
+  button {
+    position: absolute;
+  }
+  button:nth-of-type(1) {
+    top: 20%;
+    left: 5%;
+    background-color: white;
+    color: $secondary-text;
+  }
+  button:nth-of-type(2) {
+    top: 25%;
+    right: 5%;
+    background-color: $secondary-text;
+    color: white;
+  }
+  button:nth-of-type(3) {
+    bottom: 20%;
+    left: 10%;
+  }
+}
+
+.email-form {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: flex-start;
+    button {
+      height: auto;
+    }
+  }
+}
