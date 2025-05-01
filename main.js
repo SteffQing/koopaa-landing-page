@@ -5,24 +5,17 @@ const modal = document.getElementById("modal");
 const modalMessage = document.getElementById("modalMessage");
 const closeModal = document.getElementById("closeModal");
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-});
+const hideModal = () => modal.classList.add("hidden");
 
-function hideModal() {
-  modal.classList.add("hidden");
-}
+hamburger.addEventListener("click", () => hamburger.classList.toggle("active"));
+closeModal.addEventListener("click", hideModal);
 
 function showModal(message) {
   modalMessage.textContent = message;
   modal.classList.remove("hidden");
 
-  setTimeout(() => {
-    hideModal();
-  }, 5000);
+  setTimeout(() => hideModal(), 5000);
 }
-
-closeModal.addEventListener("click", hideModal);
 
 joinWaitlist.addEventListener("click", async () => {
   const email = waitlist.value.trim();
