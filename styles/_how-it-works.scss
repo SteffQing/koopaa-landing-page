@@ -6,3 +6,72 @@
   background-color: white;
   padding-top: 30px;
 }
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  padding: 30px 0;
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.step {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  .step-number {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    background-color: $primary-btn;
+    padding: 4px 20px;
+    border-radius: 100px;
+  }
+  @media (min-width: $desktop) {
+    flex-direction: column;
+    gap: 10px;
+    align-self: baseline;
+  }
+}
+
+.center-step {
+  flex-direction: row-reverse;
+  @media (min-width: $desktop) {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+}
+
+.step-circle {
+  padding: 54px 20px;
+  background-color: $primary-bg;
+  border-radius: 213px;
+  border: 1px solid $line;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 210px;
+  text-align: center;
+  h3 {
+    color: #333;
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 700;
+  }
+  p {
+    color: $grey;
+    font-size: clamp(12px, 1vw, 16px);
+    font-weight: 400;
+  }
+}
+
+.icon-step {
+  margin-bottom: 10px;
+}

@@ -22,7 +22,9 @@
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <button class="btn-primary" style="width: max-content">Join Waitlist</button>
+        <button class="btn-primary" style="width: max-content" onclick="document.getElementById('waitlist').focus()">
+          Join Waitlist
+        </button>
       </nav>
       <button class="hamburger" id="hamburger" aria-label="Menu Toggle">
         <span></span>
@@ -40,8 +42,8 @@
         </p>
 
         <div class="email-form">
-          <input type="email" placeholder="Enter your email" />
-          <button class="btn-primary">Join Waitlist</button>
+          <input type="email" placeholder="Enter your email" id="waitlist" />
+          <button class="btn-primary" id="join-waitlist">Join Waitlist</button>
         </div>
       </div>
       <div class="hero-image">
@@ -58,11 +60,13 @@
         <h2 class="title">How it works</h2>
         <p class="subtitle">From setup to payout — saving together has never been this simple.</p>
       </div>
-      <!-- <div class="steps-container">
+      <div class="steps-container">
         <div class="step">
           <div class="step-number">01</div>
           <div class="step-circle">
-            <div class="icon icon-group"></div>
+            <div class="icon-step">
+              <img src="./assets/how-it-works/circle.svg" alt="Join a circle" />
+            </div>
             <h3>Create or Join a Circle</h3>
             <p>
               Start a new savings group or join one with friends. Set the rules — number of members, contribution
@@ -74,7 +78,9 @@
         <div class="step center-step">
           <div class="step-number">02</div>
           <div class="step-circle">
-            <div class="icon icon-usdc"></div>
+            <div class="icon-step">
+              <img src="./assets/how-it-works/usdc.svg" alt="USDC" />
+            </div>
             <h3>Contribute in USDC</h3>
             <p>
               Each member contributes their agreed amount in USDC to the group smart contract on every cycle (weekly,
@@ -86,7 +92,9 @@
         <div class="step">
           <div class="step-number">03</div>
           <div class="step-circle">
-            <div class="icon icon-payout"></div>
+            <div class="icon-step">
+              <img src="./assets/how-it-works/payouts.svg" alt="Payouts" />
+            </div>
             <h3>Automated Payouts</h3>
             <p>
               At each payout round, the smart contract automatically sends the pooled funds to the scheduled member. No
@@ -98,7 +106,9 @@
         <div class="step center-step">
           <div class="step-number">04</div>
           <div class="step-circle">
-            <div class="icon icon-track"></div>
+            <div class="icon-step">
+              <img src="./assets/how-it-works/track-earn.svg" alt="Track and Earn" />
+            </div>
             <h3>Track & Earn</h3>
             <p>
               Use your dashboard to monitor group progress, payment history, and next payout. Optional: Let idle funds
@@ -106,7 +116,7 @@
             </p>
           </div>
         </div>
-      </div> -->
+      </div>
     </section>
 
     <!-- FAQ Section -->
@@ -227,6 +237,15 @@
         </a>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <p id="modalMessage"></p>
+        <button id="closeModal">Close</button>
+      </div>
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>
