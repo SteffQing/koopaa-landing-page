@@ -214,6 +214,7 @@ nav ul {
   align-items: center;
   gap: 1rem;
   flex-direction: column;
+  min-height: 60vh;
 }
 @media (min-width: 700px) {
   .hero {
