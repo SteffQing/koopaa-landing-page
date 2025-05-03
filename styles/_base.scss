@@ -40,13 +40,6 @@ img {
   display: block;
 }
 
-/* Optional utility classes */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
 .btn-primary {
   background-color: $primary-btn;
   color: #fbfbfbfa;
@@ -55,6 +48,7 @@ img {
   border-radius: 8px;
   cursor: pointer;
   border: none;
+  width: max-content;
   height: fit-content;
 
   transition: all 0.3s ease-in-out;

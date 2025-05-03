@@ -30,6 +30,9 @@
   &:nth-child(1) {
     border-top: 1px solid $line;
   }
+  @media (min-width: $tablet) {
+    padding-inline: calc((100vw - min(86.66vw, 1122px)) / 2);
+  }
 }
 
 .accordion-toggle {

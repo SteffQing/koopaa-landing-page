@@ -47,6 +47,7 @@
   }
   button {
     position: absolute;
+    cursor: default;
   }
   button:nth-of-type(1) {
     top: 20%;
@@ -64,6 +65,21 @@
     bottom: 20%;
     left: 10%;
   }
+  @media (min-width: $tablet) {
+    button:nth-of-type(1) {
+      left: 15%;
+    }
+    button:nth-of-type(2) {
+      right: 15%;
+    }
+    button:nth-of-type(3) {
+      bottom: 10%;
+      left: 18%;
+    }
+    @media (min-width: $desktop) {
+      margin-right: calc((100vw - min(86.66vw, 1122px)) / 2);
+    }
+  }
 }
 
 .email-form {
@@ -71,6 +87,9 @@
   display: flex;
   gap: 0.5rem;
   flex-direction: column;
+  button {
+    align-self: center;
+  }
   @media (min-width: $tablet) {
     flex-direction: row;
     justify-content: flex-start;
