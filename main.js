@@ -22,7 +22,7 @@ joinWaitlist.addEventListener("click", async () => {
 
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   if (!isValidEmail) {
-    showModal("Please enter a valid email address.");
+    showModal("😒 Please enter a valid email address.");
     return;
   }
 
@@ -31,23 +31,23 @@ joinWaitlist.addEventListener("click", async () => {
   joinWaitlist.textContent = "Submitting...";
 
   try {
-    const response = await fetch("https://your-api-endpoint.com/waitlist", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email }),
-    });
+    // const response = await fetch("https://your-api-endpoint.com/waitlist", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({ email }),
+    // });
 
-    if (!response.ok) {
-      throw new Error("Network response was not ok");
-    }
+    // if (!response.ok) {
+    //   throw new Error("Network response was not ok");
+    // }
 
-    showModal("You've been added to the waitlist!");
+    showModal("You've been added to the waitlist 🥳");
     waitlist.value = "";
   } catch (error) {
     console.error(error);
-    showModal(error instanceof Error ? error.message : "Something went wrong. Please try again.");
+    showModal(error instanceof Error ? error.message : "Something went wrong 😕. Please try again.");
   } finally {
     joinWaitlist.disabled = false;
     joinWaitlist.textContent = originalText;
