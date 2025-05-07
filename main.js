@@ -39,15 +39,9 @@ joinWaitlist.addEventListener("click", async () => {
       body: JSON.stringify({ email }),
     });
 
-    const { error, data } = await response.json();
-    console.log(error, data);
+    const res = await response.text();
 
-    if (error) {
-      showModal(error);
-      return;
-    }
-
-    showModal("You've been added to the waitlist 🥳");
+    showModal(res);
     waitlist.value = "";
   } catch (error) {
     console.error(error);
