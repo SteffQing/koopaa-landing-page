@@ -31,17 +31,21 @@ joinWaitlist.addEventListener("click", async () => {
   joinWaitlist.textContent = "Submitting...";
 
   try {
-    // const response = await fetch("https://your-api-endpoint.com/waitlist", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify({ email }),
-    // });
+    const response = await fetch("https://koopaa-dapp.vercel.app/api/waitlist", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email }),
+    });
 
-    // if (!response.ok) {
-    //   throw new Error("Network response was not ok");
-    // }
+    const { error, data } = await response.json();
+    console.log(error, data);
+
+    if (error) {
+      showModal(error);
+      return;
+    }
 
     showModal("You've been added to the waitlist 🥳");
     waitlist.value = "";
