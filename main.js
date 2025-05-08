@@ -3,12 +3,12 @@ const joinWaitlist = document.getElementById("join-waitlist");
 const waitlist = document.getElementById("waitlist");
 const modal = document.getElementById("modal");
 const modalMessage = document.getElementById("modalMessage");
-const closeModal = document.getElementById("closeModal");
+// const closeModal = document.getElementById("closeModal");
 
 const hideModal = () => modal.classList.add("hidden");
 
 hamburger.addEventListener("click", () => hamburger.classList.toggle("active"));
-closeModal.addEventListener("click", hideModal);
+// closeModal.addEventListener("click", hideModal);
 
 function showModal(message) {
   modalMessage.textContent = message;
